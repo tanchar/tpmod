@@ -1,0 +1,35 @@
+<configs>
+    <append xpath="//dialog[@id='trader']/statement[@id='start']">
+        <response_entry id="teleport"/>
+
+    </append>
+
+    <append xpath="//dialog[@id='trader']">
+        <statement id="teleport">
+            <response_entry id="teleport_to_rekt" />
+            <response_entry id="teleport_to_hugh" />
+            <response_entry id="teleport_to_joel" />
+            <response_entry id="teleport_to_jen" />
+            <response_entry id="teleport_to_bob" />
+            <response_entry id="nevermind" />
+        </statement>
+
+        <response id="teleport" text="Take me somewhere" nextstatementid="teleport"/>
+
+        <response id="teleport_to_rekt" text="Take me to Rekt">
+            <action type="Teleport, Mods" target="trader_rekt" />
+        </response>
+        <response id="teleport_to_hugh" text="Take me to Hugh">
+            <action type="Teleport, Mods" target="trader_hugh" />
+        </response>
+        <response id="teleport_to_joel" text="Take me to Joel">
+            <action type="Teleport, Mods" target="trader_joel" />
+        </response>
+        <response id="teleport_to_jen" text="Take me to Jen">
+            <action type="Teleport, Mods" target="trader_jen" />
+        </response>
+        <response id="teleport_to_bob" text="Take me to Bob">
+            <action type="Teleport, Mods" target="trader_bob" />
+        </response>
+    </append>
+</configs>
